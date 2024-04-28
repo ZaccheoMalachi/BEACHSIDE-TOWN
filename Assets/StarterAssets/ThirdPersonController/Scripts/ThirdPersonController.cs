@@ -147,6 +147,7 @@ namespace StarterAssets
 #endif
 
             AssignAnimationIDs();
+            panim.SetBool("IsFall", true);
 
             // reset our timeouts on start
             _jumpTimeoutDelta = JumpTimeout;
@@ -183,6 +184,8 @@ namespace StarterAssets
                 transform.position.z);
             Grounded = Physics.CheckSphere(spherePosition, GroundedRadius, GroundLayers,
                 QueryTriggerInteraction.Ignore);
+
+            panim.SetBool("IsLand", true);
 
             // update animator if using character
             if (_hasAnimator)
@@ -267,6 +270,7 @@ namespace StarterAssets
             }
             else if(_input.sprint)
             {
+                panim.SetBool("IsMoving", true);
                 panim.SetBool("IsRunning", true);
             }
             else
@@ -304,6 +308,9 @@ namespace StarterAssets
                     _animator.SetBool(_animIDFreeFall, false);
                 }
 
+                panim.SetBool("IsJump", false);
+                panim.SetBool("IsFall", false);
+
                 // stop our velocity dropping infinitely when grounded
                 if (_verticalVelocity < 0.0f)
                 {
@@ -315,6 +322,8 @@ namespace StarterAssets
                 {
                     // the square root of H * -2 * G = how much velocity needed to reach desired height
                     _verticalVelocity = Mathf.Sqrt(JumpHeight * -2f * Gravity);
+
+                    panim.SetBool("IsJump", true);
 
                     // update animator if using character
                     if (_hasAnimator)
@@ -341,6 +350,9 @@ namespace StarterAssets
                 }
                 else
                 {
+                    panim.SetBool("IsFall", true);
+                    Grounded = true;
+
                     // update animator if using character
                     if (_hasAnimator)
                     {
