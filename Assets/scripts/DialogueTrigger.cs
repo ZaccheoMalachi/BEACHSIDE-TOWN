@@ -29,11 +29,11 @@ public class DialogueTrigger : MonoBehaviour
     public Dialogue dialogue;
     public void TriggerDialogue()
     {
-
+        DialogueManager.instance.StartDialogue(dialogue);
     }
     private void OnTriggerEnter(Collider other)
     {
-        if (Input.GetKeyDown(KeyCode.F) && other.CompareTag("Player"))
+        if (other.CompareTag("Player"))
         {
             TriggerDialogue();
         }

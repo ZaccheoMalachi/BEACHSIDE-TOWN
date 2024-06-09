@@ -4686,6 +4686,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Peasant Nolant Yellow(Free Version)
       objectReference: {fileID: 0}
+    - target: {fileID: 2669372775266760516, guid: 4f9803ed31b25c049b47eaf15bcb0c32, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3332756950553193982, guid: 4f9803ed31b25c049b47eaf15bcb0c32, type: 3}
       propertyPath: m_RootOrder
       value: 5
@@ -4728,6 +4732,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3332756950553193982, guid: 4f9803ed31b25c049b47eaf15bcb0c32, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5868667651582762347, guid: 4f9803ed31b25c049b47eaf15bcb0c32, type: 3}
+      propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -5472,6 +5480,7 @@ GameObject:
   m_Component:
   - component: {fileID: 390454632}
   - component: {fileID: 390454633}
+  - component: {fileID: 390454634}
   m_Layer: 5
   m_Name: DialogueBox
   m_TagString: Untagged
@@ -5524,6 +5533,24 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &390454634
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 390454631}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 50a0858d9b25d4d47ba5ad6bd3201e72, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CharacterIcon: {fileID: 537319002}
+  CharacterName: {fileID: 1379942238}
+  DialogueArea: {fileID: 1923245120}
+  isDialogueActive: 0
+  TypingSpeed: 0.1
+  animator: {fileID: 390454633}
 --- !u!1 &390904414 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2386048073143155681, guid: a901cbd1539f3c14eb150e0e9c67e5fc, type: 3}
@@ -6796,10 +6823,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Continue
+  m_text: Continue(E)
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 1ad326053d8f00240b4f3f8a5ac93b58, type: 2}
+  m_sharedMaterial: {fileID: -4557690608853207973, guid: 1ad326053d8f00240b4f3f8a5ac93b58, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -9332,7 +9359,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6792327054025522797, guid: dcfc46459ca2047499d0ed8193d21f38, type: 3}
       propertyPath: m_Name
-      value: Peasant Nolant Blue(Free Version) 1
+      value: Jim
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dcfc46459ca2047499d0ed8193d21f38, type: 3}
@@ -10861,11 +10888,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6127395625895404759, guid: dcfc46459ca2047499d0ed8193d21f38, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 83.54779
+      value: 82.54779
       objectReference: {fileID: 0}
     - target: {fileID: 6127395625895404759, guid: dcfc46459ca2047499d0ed8193d21f38, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.9
+      value: -0.8999996
       objectReference: {fileID: 0}
     - target: {fileID: 6127395625895404759, guid: dcfc46459ca2047499d0ed8193d21f38, type: 3}
       propertyPath: m_LocalPosition.z
@@ -10877,15 +10904,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6127395625895404759, guid: dcfc46459ca2047499d0ed8193d21f38, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 6127395625895404759, guid: dcfc46459ca2047499d0ed8193d21f38, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: 0.00000049173826
       objectReference: {fileID: 0}
     - target: {fileID: 6127395625895404759, guid: dcfc46459ca2047499d0ed8193d21f38, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 6127395625895404759, guid: dcfc46459ca2047499d0ed8193d21f38, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -10901,7 +10928,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6792327054025522797, guid: dcfc46459ca2047499d0ed8193d21f38, type: 3}
       propertyPath: m_Name
-      value: Peasant Nolant Blue(Free Version) 1 (1)
+      value: Tim
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dcfc46459ca2047499d0ed8193d21f38, type: 3}
@@ -11209,6 +11236,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3042470926991119426, guid: dcfc46459ca2047499d0ed8193d21f38, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5041455415743565748, guid: dcfc46459ca2047499d0ed8193d21f38, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6127395625895404759, guid: dcfc46459ca2047499d0ed8193d21f38, type: 3}
       propertyPath: m_RootOrder
       value: 6
@@ -11255,7 +11290,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6792327054025522797, guid: dcfc46459ca2047499d0ed8193d21f38, type: 3}
       propertyPath: m_Name
-      value: Peasant Nolant Blue(Free Version) 1 (2)
+      value: Tom
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dcfc46459ca2047499d0ed8193d21f38, type: 3}
@@ -11800,7 +11835,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2669372775266760516, guid: 4f9803ed31b25c049b47eaf15bcb0c32, type: 3}
       propertyPath: m_Name
-      value: Peasant Nolant Yellow(Free Version) (1)
+      value: Juan
       objectReference: {fileID: 0}
     - target: {fileID: 3332756950553193982, guid: 4f9803ed31b25c049b47eaf15bcb0c32, type: 3}
       propertyPath: m_RootOrder
@@ -19287,7 +19322,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2916486913691104272, guid: 3c0b66c1fb55cd34994e034186a852c1, type: 3}
       propertyPath: m_Name
-      value: Peasant Nolant Brown(Free Version)
+      value: Bob
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3c0b66c1fb55cd34994e034186a852c1, type: 3}
@@ -21743,7 +21778,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8047161636021232021, guid: c708a3b79cd542b42bbfedb17e213bc1, type: 3}
       propertyPath: m_Name
-      value: NestedParentArmature_Unpack
+      value: Player
       objectReference: {fileID: 0}
     - target: {fileID: 8047161636021232021, guid: c708a3b79cd542b42bbfedb17e213bc1, type: 3}
       propertyPath: m_TagString
@@ -24987,8 +25022,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Name
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 1ad326053d8f00240b4f3f8a5ac93b58, type: 2}
+  m_sharedMaterial: {fileID: -4557690608853207973, guid: 1ad326053d8f00240b4f3f8a5ac93b58, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -33111,8 +33146,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: This is a dialogue line
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 1ad326053d8f00240b4f3f8a5ac93b58, type: 2}
+  m_sharedMaterial: {fileID: -4557690608853207973, guid: 1ad326053d8f00240b4f3f8a5ac93b58, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -35211,6 +35246,46 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 5fd27dfffd6864e4784da1443451a45a, type: 3}
   m_PrefabInstance: {fileID: 2103325717}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &2105148128 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2916486913691104272, guid: 3c0b66c1fb55cd34994e034186a852c1, type: 3}
+  m_PrefabInstance: {fileID: 1040028313}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2105148131
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2105148128}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 26de2a05aab59ee468ee079a00e00ba4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    dialoguelines:
+    - character:
+        name: Bob
+        icon: {fileID: 21300000, guid: 02fee1c799149a64a804a6acd3d3f464, type: 3}
+      line: Hello! My name is Bob
+    - character:
+        name: Player
+        icon: {fileID: 21300000, guid: b3de5868093369f4198e049b759dfce8, type: 3}
+      line: Hi! I am Player
+--- !u!65 &2105148132
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2105148128}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1.900509, z: 1}
+  m_Center: {x: 0, y: 0.9409818, z: 0}
 --- !u!1 &2109903416
 GameObject:
   m_ObjectHideFlags: 0
